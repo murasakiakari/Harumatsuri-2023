@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>queuing</title>
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+    <script>
+        let suichan = `
+                                                 ac!+, c.___ ,_,.---,---.,,=-___ . .+?!a0     a?.03b20.1 21 2
+                                            c= :.+  =,,,-+ccbb;b!!!!a;+:c++:bbc;+-,..  . -?-;b;9 40?1a4!,1293
+                                         ;.Ñ-  :.-:+=c;;c04452?354440bb1?ba24332?bbabc:=,- _ =411#5b024;45c5?a. a
+                                      :  .. ,,+ba?1ab00cc!100!c?0?00b;;?b;b123440?34420a;+:+,- 2WW493?W#$232aa. a!? a
+                                     2c_ ,-;ab05431a;c?;cc1443!254440bb3!b!3210?ba134443abac=:;=180c0$$W#1;!96_a 4?c1
+                                    ;.?.,:?54!b?0134?b2?;:+;:=-,---+==+!bb!54340?231001!ba2aabbba:+4!b0Wa5@ba81b!0aca4
+                                    +  =abb011!151b=,-==+===----======++==-==+;b0543440c;!!cb?442a;c-;#W7b!@Ñ#53?7b;Ñ8c
+                                    c$,+ccb?51+..,,-+;bbaaa!!!!0110!ac:=-,,-=;c;:==b32bb?2ccb03443?aba-1Ñ90a441a!33! 2b
+                         c,0:c3?0   :-:-0!;__:!1223345543222223322220011210!;-,=;;;;;=,c3ab!420020?43abc_ca40b2?aa1:0 +!
+                      a -, ,  :_.,_.Ñ ?-=!44237965664222222231122222210?!?15W@#8?- =;;;;+,c54343!c04342;+-:51bc016$$73?!
+                 0:,+=7 =.!8W7c.;ba-,?3106W$746$96333333232b03?2222221?13234424213781=-;;;;=+250!110244!;+c-33118W430cb?
+               =1=. Ñ.b11c,;47273,!5?2WW6457$998456542230c24!?32222301322010007@800324$5=-c;;:,a444201?baab+.b27?62!35a?
+             c!==,_b62:+!65?37b+5?0#$5555896$###$684262;233b112222223?032470068?4643?5646W?,:;;:,0543b;ca3a:c=77c274530-
+            : ,+-!?+c055!063:;4!9W55555555779##67847$c0432c3!132233323a03326$126@6!47404554$6,-:;+=abaca0bb01b+42+Ñ1 70b
+         ?-++  _-b?45?a55?b:30W8455555555555$$5975W6c7553b41!3233333333b23334WW2W88$02755555487,-=+==13b;c2440;,W-!;b?
+       c .,_--;a160b?61a?+?1$#6555555555555885W###1aW555!56!355444444452!65555W@83655811655555482.===.b!310343a+. ,+
+     0  ,,.=c!51bb?6?a!b+?556@535555555555665W##W!!Ñ746?564?655555565556!36558##665555580165555559;,==,143011!1a-__+
+   !  - =+c!4abb!5!ba!c:25344?$6555555555556W##$a!@W562286216555556855561?66W##W6557555556a455555493.==.14?ba343: _,
+   .,,.=c!3bcbb4!baba;=34442!43765555555557W7$9?;###86?756?45555557955556?#WW##W5555555555710655555#8,==,a120243:.a_;
+   - ,;c0?;bca2cbbbb:+53341a4343565555555675562:8#####19561#W98777WW7555$!8#WW#$5555555555556a55556##9-=-=44100bb,! ;
+  c:.a-+2!ccc1acccb;c53342a4333444455556245554c2@#W9$W0##82@W######W77$$@04@W8$$55555555555557?1659#W89=-,;0b;bb?c  =
+ _3, --=,.,+:1?;cc;;43443b3333333344456146555c;9794556?$#82@#######$87#W@42$45555555555555555560?#W53445-=,ca;a4?+. =
+ + :-=----===,..-+;43334a1433333333334?36556a!46465556!5781@67#####$87#W@7a65555555556136555554$5a4334341,-:4!;c!c  -
+   ,,==--------=-+43334??433333322334a04346b4!811655562a671$5559###987##@7b655555555556?4555796340a433334c,,b;=3a+-.=
+;,@-,.--.,--====-233333b333333320334aa4333b44!8!2655556a180655559#W8448498b5555555555554a885233334!a423332,.b$a30   c
+; Ñ,=,17775311:,?40434!!43333331134?+3333b371?5b15555555b44?65555$$7106484b6555555555445!a433333334a?32324; bb!?3: 1;
+; +.;-3656556:?!5?3443;23333332a230=0324a267?a5b033333445b2116555675a16570?65544433333323c1333333333c233340.=0+b-=-+
+ a==:-376667+3;2305451c4333334?a31;!334!?757?!5a?333333324?c!1333333c0424c032333333333333?;3333333230a43333+,cc =; :
+   - -38666+4;b7?35450!5333334b?4;a!21?;!?02aa4?b42333333323a=233330;1332+a323333333333323;?433333334a13334c==Ñ. +
+   - .0875+4b+46!5556?05444331;0b?2143c576671b30;2233333333324!b232bc324a2a1333333213333230;3233333330!4334!-:,,,_
+   :? b83+4c;b82!7666?16554451b?c6!24a1755564b34c032333333333323233=a310c0?c211112400323332;0323333333b33351.+=.++
+   :+ ;1:4;b+29c?866711755555?aa16!42b6556556!14?a43333333333332a34c!33b366?b4233321c!23333ab433333335!15452,+:-,.:
+    + ,:4;cc+64=0877830766656!a!64?5a36555653?a53b23333333333333b14ab4a07557a!4133333b32113?c334444446006563,=++,_-+
+  ,: ,:3;cc;c8a+!87775?766666?b274?3a655555557!?2+!53333333333340c5?ca?755557c03033332b43440;3544555563?7572,==:- _:
+ cc -+3cccc1!5:;c87778?587767!c6640?26555555564b5!c44403444444435c!4=175532356;23044450b5452;2655666675a7680 ==++,_..
+?? 2=1a;c;2ca1+?!387784?87778ca755!!655556656572?2b!655!455555545?;3a?456666565;41c6446ac752c1766666776!778b.,-=:= ;+
+b.,.!?;c;??:ca:2;b97779?48779c?756b06555531366571!??0656b3655555602a0a6555556665;6!c6557cc72c0867777786!775-,,,.++,.,?
+: ,:2;;;c1cc;=a0;:397794:8777b?50b+=++:b04774?3660+5?0078c07666673?7ac36555555555;5?a4766ca3c2877777785!870.,,,,.++ ::
+1.Ñ-b;;;b2cbb,a1;c:68778aa977?._ _.-+::+-._,c472271a8??=39b:776775!67!:66653235666c211?875aa;4877778891174;.-,,,,.-=c.+
+b:c..b,--,,,.._..,-:88783!!983?86666665566663!+b6346563c!b71b!8778?4670b13677776666!a26b592aa788778888a341.,,,,,,,,_1 +
+  b 7,-----------==-+888702c96a6555555555555556623655557!;4!!22c6$1?3562b=.._    ,:13:273b30!986588893!44:.-,,,,,,,,: +
+  ;.b,---=========-., 39937Wb9?1656555555555666666555566563560a74b?a!b?24566542?c=_  ,+c!35;697188888a35!_,,,,,-..+ = +
+  :=; .;,--_c0!ab-3ÑÑÑ?c791$@?20#$8655555566665555555555555555666566665555555555556750:-c71197088889?151.,,,,..-==, +;
+    c 2,---=.!440!Ñ#4!444b72$@8:4#$WWWWWW$$$$W#@@@@@@@@@@@@@@#$865556655555555555555556672?$6?988892053,.,,.-====+=.:
+   !. -,=----,15??Ñ@@#6c6$5cb9##WWWWWWWW#####@@@@@@@@@@@@@@@@@@@@@@W865556655555556666572?$?1$88895052.,._-======+- -
+   ! ;,-=---=,:44:9Ñ@@@20$61Ñ99#WWWWW########@@@@@@@@@@@@@@@@@@@@@@@@@@#W9876555656667$?45a9888889411_,,_-=======:= -+
+   !,:=,,,,,,,.?45:3Ñ#ÑW!971@##############@@@@@@@ÑÑÑÑÑÑÑ@@@@@@@@@@@@@@#####WWWWWWWW#700!99788974$3-.-,..,=======:+- :
+    .b- $c=-  ab4343:?0b:943Ñ@@@@@@@@@@@@@@@@@@@Ñ6465544334579#@@@@@@@@@#####WWW#W7a:0b88867893a982+-.,===-=-====:+- =
+          14a4Ñc85340:00c$!;Ñ@@@@@@@@@@@@@@@@@@@Ñ56777777777783W@@@@@@@@@@######WW@Ñ7?9895689?20781 .=====-Ñ ..,-+:=c-_
+            ;1 b88643c!0?5--,3Ñ@@@@@@@@@@@@@@@@@Ñ64987777777782WÑ@@@@@@@@@@@@@####@70$894297a60:77!,-=====, 3,,-,_-++ :
+            aÑ.?$8873c4!2+ =;+.2ÑÑ@@@@@@@@@@@@@@@@3898888888983Ñ@@@@@@@@@@@@@@@@@@$?9896?83+; ,b75.!-=====-  ,,,,,,_.Ñ ;
+          c;+#.6$8888+001c 3b-+  ;7ÑÑ@@@@@@@@@@@@@Ñ46W99999$92@@@@@@@@@@@@@@@@@@@Ñ1698912?  ab4b70+!:-====,  ,,,,,,,.Ñ :
+     ?c=c:9 9,5$8898?8!33c @ac_-- . :3#Ñ@@@@@@@@@@@@@69$$$74$Ñ@@@@@@@@@@@@@@@@ÑÑ$!1$888b;=:a+a a6+;c.-,,==-  ,,,.,,: c !
+  a==-a # !5WW88895c66a51+;-ba  ;.Ñ-Ñ  _c4WÑÑ@@@@@@@@@@@@@Ñ@@@@@@@@@@@@@@ÑÑ#6!- ;!69895:@cbb +040-9c=b:..=-0 +.-- _+?:;
+;!c=  =3WW#888895;1=b97a:c;a a     ?:;;-  5 -a49ÑÑÑ@@@@@@@@@@@@@@Ñ@ÑÑ#82!+ Ñ  :bb!69893.;4!-3@2?,Ñ+;; Ñ,,.,5 4-=-_
+c+,_?#W?79788890 .:13c_:a +a a         2cb!-=  . +,-b0245566431?a+== @79_::c1:?0:-58892b ?8@Ñ4!c?:+ a @,,,.2 -_-._
+ _1ÑW;18677778! ,!!=_ -aa0903         !=3:c ,Ñ_cc32!=,-62=-.+c+:Ña+c::$9  ; 1  00:!689?5Ñ@@#1b a=c  : 3,,.-Ñ.!Ñ.,_
+=7@? ?76777782=a!,_-;c;0            b b,1 +07#Ñ$255a0?!bca2!b2::+ca:b-;;=+,= =;  2,!7929@@@1-+cc;   - =., _Ñ    ;:
+b@5__?867777743b, -+c             c;b- _!5$@W#@67@$93b2$!aa01206a=::;ccc++=b  b:cb c!$53@3-=c;;c    - =-,6,a
+c_!64b176666752b-#-c;            . , .c1+54###@4980:,6?+36?8@3253?-+:::::+=a:_ .!Ñ 714$0  cbb!      c Ñ,. .
+Ñ= + +0477666666b. . _a        ;;-,+-b1!c;65@##W28$88873!!37?!271b+-+=++==.bbb=_.8 841$6c !b        : a c :
+ !-1+; , ,;!477675;  -,;      +_- =;caa?a0!57@W#6905756265!2$4##@$51_--bÑÑÑ!31c-.ab2a4991 6:         + := =
+     a:cb=0 = +!5673+ ,b      ;. :a!1030c0ab66@@9212W5111aa$?$#@66?0a1a?8920b?0;,-+ a8883-Ñ+
+          b,2=+ ++?74:.=   a:-# ;c11:c?c;c?44###@36=b;b41c#1$@##@56b=?c!25!$W:41:- b79743 Ñ=
+       !?!!:=c+=;0?!c .+ !+Ñ=.=!a??;-25?c057@W##Ñ8=;=-=+,-1@####@$44b0a4?8#W$250a+1$$337c !+
+     ;! = c :ccb;--  ,,=;=+ +ca?40:1+!?bb1:24$@@8+;;++;:-,?@#@$45?+;ba+b;!89841b!;;=+!+Ñ :=:
+    c .+-a5?= -,_-:1cb+c:+?;;?52bc3;-10cc?-;:256:;;;;;;:---554!::c0a0?b?;35234701$;-+a;+b:
+    b+ ;65+ -+Ñ+a   a;+c0=ab?0bba1;0:?1;+?a441c!13354;c;=a!:c440363+!!!3!!Ñ@##@Wb14: 9=
+    c;_:44.b-+;    : ;_:!a051;a!!a2?+3a?a0:51c0!?W6?1311a1cbc?!;!a?c2+a5!;1!??c13bac -:
+    c-:  ;:,b-;  c#++:c;240!aa1a!bb:,c::;?+;:cab+c=!8@W!c::;;ac:0a=+b.:c==b40a0:?3?= ++
+     ?:b+:--;=: a::,=:b1b21;!1a3b0c. :c:;b:cbccc:b:cb+:bc:;b;bc;;c+;:.:+,.  +:c?;c- +-
+                .1 !$02b?a:4aa?01b.Wc=c::b:c!ccb+c:ca;cab+;cc!b;a!:b=+a=.!..b..,_ == ;
+               :b=:$2a01+!1bb2a=,c=- _;:=c++c:+;-;++;++;;-::+b;;bc:b-ba,.._   34 4
+               :? 30a$@#@$3!!b==+ .+ _=:-;::!;;a:c;;!cc!a+c;;ac0b=:+,+-2_?;
+              ?0;;+2$38@@#@W2 a!2;;_9-++=::b0:;c;bb;bc;cc;bccc:a:+b-;-.._+
+             1-4Ñ4$$3!5851bÑÑc+;=;: =.:b::c:ca:c::c+bc:b;+b+cb;ab;b-ab- ,
+           0:0Ñ 8@##W$6!Ñ0Ñ:cb_!=;;:+=+--,:+=b:;;:b+ac:b;:b+b;:b==,+:-=  ,+b0cc1
+         bb5222W@##@#3Ñ5bc1c -.=::+-:W95!0:===--=+:+0?acab=::::;:3:;c-,,,-;  = ,:.
+      0:0b;1-3Ñ@@Ñ#4 Ñb?!      ==+,b$64022b=;;;;c:=+0;:::2:::::+=a--;;.,,,,,.,,-=.
+   4274Ñ;1:8Ñ6153aÑÑb0?     a 2----?6143??=-=:;:c++b;a+ab+c:b;!3!b?;+!ac.,,,,,,.+
+  !5+Ñ60:c;+=:bc. cba      cÑb c-,--,+:a!.-=:+:::.c;cc=ba:bbc!:02a!00ca1;b,.,,,,
+  :Ñ;:==b!:++==+c=b       ;c 0,,,-.+--:-+==,.-+=;!1?50c553a1b1b;?!;;0aa+?a:?-.,; :
+  0!.=260+7_,=-: =      +0::,;-,-.b:=ab.+:=+_c21a?1!0;:000b00!0:;ab:;0a2:?50a0;7c-++
+  ;ba=271?a $+_= -    :._+_,!51.,-.;23!,.,,,=:!c=!ccb+:!!?bb!c42c254?b2!4cb32ac?=;=+.c
+             2?0 c   =+= .a1?;a1= c53!!;_._c444!3!b40ca4342b2b03!c221a;1c0c+033!?! ,.,=b-
+                    ++  c34?b2!b;a10a:0c!a:0000;!ab1c;c00??c!0?!1;b3240b3a3?;02!c+!:--:b+
+                    +--!53!a2a?ba53?b!??2c14340a1a13aab30241?0b250b05340a2a?c=;!a:.--,,b.
+
+
+`;
+
+        let suichanIntro = `
+                              すいちゃんは——? 今日もかわいい！
+`;
+        console.log(suichan, suichanIntro);
+    </script>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <main class="px-3">
+            <div class="row">
+                <div class="col-6">
+                    <h1>最新叫號</h1>
+                    <h1 class="display-1" id="currentFirstEntry">0</h1>
+                </div>
+                <div class="col-6">
+                    <h1>最新再入場叫號</h1>
+                    <h1 class="display-1" id="currentSecondEntry">R0</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h1>目前派籌</h1>
+                    <h1 class="display-1" id="issuedFirstEntry">0</h1>
+                </div>
+                <div class="col-6">
+                    <h1>目前再入場派籌</h1>
+                    <h1 class="display-1" id="issuedSecondEntry">R0</h1>
+                </div>
+            </div>
+            <div class="row">
+                <br><br><br><br><br>
+            </div>
+            <div class="row">
+                <div class="mx-auto col-12">
+                    <form class="row g-3">
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="number" placeholder="請輸入你的籌號以查詢預計輪候時間">
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-primary mb-3" onclick="search()">查詢</button>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="prompt"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script>
+    let websocket = new WebSocket("wss://erumu.cityucads.com/api/queuing-number");
+    let queuingInformation, number, queuingNumber, valid = false;
+
+    websocket.onmessage = function (e) {
+        queuingInformation = JSON.parse(e.data);
+        if (queuingInformation.current.first == -1) {
+            document.getElementById("currentFirstEntry").innerText = "中午12時開始叫籌";
+        } else {
+            document.getElementById("currentFirstEntry").innerText = queuingInformation.current.first;
+        }
+        if (queuingInformation.current.second == -1) {
+            document.getElementById("currentSecondEntry").innerText = "中午12時開始叫籌";
+        } else {
+            document.getElementById("currentSecondEntry").innerText = "R" + queuingInformation.current.second;
+        }
+        document.getElementById("issuedFirstEntry").innerText = queuingInformation.issued.first;
+        document.getElementById("issuedSecondEntry").innerText = "R" + queuingInformation.issued.second;
+
+        if (!valid) {
+            return
+        }
+        if (queuingInformation.totalAllowEntry >= queuingNumber.order) {
+            document.getElementById("prompt").innerText = "籌號: " + number + " 可即時進場";
+        } else if (queuingInformation.waitingTime == -1) {
+            document.getElementById("prompt").innerText = "中午12時開始叫籌";
+        } else {
+            let waitingTime = Math.ceil(Math.ceil((queuingNumber.order - queuingInformation.totalAllowEntry) / 20) * (20 * queuingInformation.waitingTime) + queuingInformation.offset);
+            document.getElementById("prompt").innerText = "籌號: " + number + " 的預計輪候時間約為: " + waitingTime + "分鐘";
+        }
+    }
+
+    function search() {
+        number = document.getElementById("number").value;
+        let request = new XMLHttpRequest();
+        request.open("GET", "/api/queuing-number/" + number);
+        request.send();
+
+        request.onload = function () {
+            queuingNumber = JSON.parse(request.responseText);
+            if (request.status != 200) {
+                valid = false;
+                console.log(queuingNumber.message);
+                document.getElementById("prompt").innerText = "無效籌號";
+                return;
+            }
+
+            valid = true;
+            if (queuingInformation.totalAllowEntry >= queuingNumber.order) {
+                document.getElementById("prompt").innerText = "籌號: " + number + " 可即時進場";
+            } else if (queuingInformation.waitingTime == -1) {
+                document.getElementById("prompt").innerText = "中午12時開始叫籌";
+            } else {
+                let waitingTime = Math.ceil(Math.ceil((queuingNumber.order - queuingInformation.totalAllowEntry) / 20) * (20 * queuingInformation.waitingTime) + queuingInformation.offset);
+                document.getElementById("prompt").innerText = "籌號: " + number + " 的預計輪候時間約為: " + waitingTime + "分鐘";
+            }
+        }
+    }
+</script>
+
+</html>

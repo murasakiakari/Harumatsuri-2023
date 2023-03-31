@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .ticket-container {
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;
+            margin-top: 20;
+            margin-bottom: 20;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid;
+            max-width: 768px;
+            justify-content: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: auto
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+        }
+
+        .table-container {
+            margin: auto;
+        }
+
+        .table {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14
+        }
+
+        @media only screen and (max-width: 768px) {
+            .ticket-container {
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                margin-top: 20;
+                margin-bottom: 20;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid;
+                max-width: 576px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>{{.Name}} 先生/小姐 你好，<br>
+        <br>
+        感謝你購買我們的優惠門票。以下是你的優惠門票換領通知，請確認：<br>
+    <div class="ticket-container">
+        <div class="image-container">
+            <img src="cid:{{.Ticket.Embed.Name}}" class="image">
+        </div>
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>姓名：</th>
+                    <td>{{.Name}}</td>
+                </tr>
+                <tr>
+                    <th>城大證件編號：</th>
+                    <td>{{.SID}}</td>
+                </tr>
+                <tr>
+                    <th>數量：</th>
+                    <td>{{.Quantity}} 張</td>
+                </tr>
+                <tr>
+                    <th>活動日期：</th>
+                    <td>3月12日（日）</td>
+                </tr>
+                <tr>
+                    <th>換領時間：</th>
+                    <td>上午10時正 至 下午6時30分</td>
+                </tr>
+                <tr>
+                    <th>注意事項：</th>
+                    <td>每個QRCode只能使用一次，請保存妥當以免外洩。<br>
+                        請務必攜同相關城大證件於換領時出示，<br>
+                        否則將收取與普通門票之差價，敬請留意。</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    再次感謝你支持城大春祭2023！我們期待與你見面！<br>
+    <br>
+    如有任何疑問，歡迎透過Instagram專頁(<a href="https://www.instagram.com/harumatsuri2023.erumu/">@harumatsuri2023.erumu</a>)或<br>
+    電郵至<a href="mailto:harumatsuri2023.erumu@gmail.com">harumatsuri2023.erumu@gmail.com</a> 查詢。<br>
+    <br>
+    香港城市大學動漫畫同人誌 城大春祭2023委員會</p>
+
+</body>
+
+</html>
